@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
-
+const flag = 'iiitl{yoUr_F1R5t_fLag}'
 function App() {
   return (
     <Router>
@@ -66,6 +66,7 @@ function SuccessPage() {
     <div className="flex flex-col items-center justify-center min-h-screen min-w-[100vw] bg-gray-900 text-white p-4">
       <h1 className="text-3xl font-bold py-2">You cracked it!</h1>
       <img src='https://static.vecteezy.com/system/resources/thumbnails/021/596/317/small_2x/a-digital-intelligence-hacker-cat-research-with-a-computer-generative-ai-photo.jpg' className=' w-64 h-44 rounded-md'></img>
+      <h1 className="text-2xl font-mono py-2">flag: {flag}</h1>
     </div>
   );
 }
